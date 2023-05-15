@@ -1,0 +1,141 @@
+* { margin: 0px;
+    padding: 0px;}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    float: left;
+    position: fixed;
+    background: #fff;
+    z-index: 999;;
+}
+
+.wrap_header {
+    position: relative;
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.menu_list {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.menu_list li{ 
+        float: left;
+        margin: 0 20px;
+        text-align: center;
+    }
+
+.menu_list li a  {
+    margin-left: 20px;
+}
+
+.menu_list li a:hover {
+    font-weight: 900;
+}
+
+.menu_login {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.menu_login li {
+    float: left;
+}
+
+section{
+    width: 100%;
+}
+
+section .wrap_content {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.wrap_content h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.main {
+    padding-top: 80px;
+}
+
+.main_visual {
+    position: relative;
+}
+
+.main_visual_text {
+    position: absolute;
+    max-width: 1200px;
+    top: 0;
+    left: 0;
+}
+
+.content_01 .new_product {
+    margin: 0 -24px;
+}
+
+.content_01 .new_product a {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.content_02 .best_product {
+    margin: 0 -12px;
+}
+
+.content_02 .best_product li {
+    float: left;
+    margin: 0 12px;
+}
+
+
+
+.content_02 .product_info {
+    margin-top: 8px;
+}
+
+.content_02 .product_info p {
+    font-weight: 900;
+}
+
+.content_02 .info {
+    font-size: 14px;
+    float: left;
+    color: #999999;
+}
+
+.content_02 .price {
+    font-size: 14px;
+    float: right;
+    font-weight: bold;
+}
+
+
+.content_04 .insta li {
+    float: left;
+}
