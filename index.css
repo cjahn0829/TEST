@@ -64,6 +64,12 @@ a {
     float: left;
 }
 
+
+
+
+/* #####컨텐츠영역##### */
+
+
 section{
     width: 100%;
 }
@@ -91,8 +97,24 @@ section .wrap_content {
 .main_visual_text {
     position: absolute;
     max-width: 1200px;
-    top: 0;
-    left: 0;
+    top: 78px;
+    left: 350px;
+}
+
+.main_visual #main_title {
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 24px;
+
+}
+
+.main_visual #main_text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #666;
+    line-height: 1.5;
+
 }
 
 .content_01 .new_product {
@@ -135,7 +157,11 @@ section .wrap_content {
     font-weight: bold;
 }
 
+.content_04 .insta {
+    margin: -12px;
+}
 
 .content_04 .insta li {
     float: left;
+    margin: 0 12px;
 }
