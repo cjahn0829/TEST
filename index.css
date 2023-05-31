@@ -21,7 +21,6 @@ button {
 /* #####헤더영역##### */
 .header {
     width: 100%;
-    float: left;
     position: fixed;
     background: #fff;
     z-index: 999;;
@@ -33,29 +32,66 @@ button {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
+    margin: 0 auto; 
     height: 80px;
-    margin: 0 auto;
-    
 }
 
+.hd_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height:100%;
+}
+
+.menu_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .menu_list li{ 
-        float: left;
-        margin: 0 20px;
-        text-align: center;
-        box-sizing: border-box;
-    }
+    /* float: left; */
+    margin: 0 20px;
+    padding:10px;
+    /* text-align: center; */
+    list-style: none;
+}
 
 .menu_list li a  {
-    margin-left: 20px;
+    letter-spacing: 0.5px;
 }
 
-.menu_list li a:hover {
+.menu_list li a:link, .menu_list li a:visited, .menu_login li a:link, .menu_login li a:visited{
+    text-decoration: none;
+    color: #000;
+}
+
+.menu_list li:hover a {
     font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 0;
 }
 
+.hd_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:10%;
+    height:100%;
+}
+
+.menu_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .menu_login li {
-    float: left;
+    list-style: none;
+    padding: 5px;
+}
+.menu_login li a { 
+    letter-spacing: 1px;
 }
 
 
@@ -99,6 +135,11 @@ button {
     font-size: 14px;
     color: #999999;
 }
+
+
+
+/* #####공통##### */
+
 
 
 
@@ -190,13 +231,79 @@ section .wrap_content {
     margin-bottom: 60px;
 }
 
-.content_01 .new_product {
+
+.content_01 .new_product_list {
     display: flex;
     justify-content: space-between;
 }
 
+.content_01 .new_product {
+    display: inline-block;
+    position: relative;
+}
+
+.content_01 .product_hover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #22222280 ;
+}
+
+.content_01 .new_product_01:hover .product_hover{
+    display: block;
+}
 
 
+.content_01 .product_hover .product_text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px #00000080;
+}
+
+.content_01 .product_hover .product_text h3 {
+    margin-bottom: 24px;
+}
+
+.content_01 .product_hover .np_button {
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
+    display: inline-block;
+    border: #fff 1px solid ;
+    padding: 8px 32px 8px 28px;
+}
+
+.content_01 .product_hover .np_button p{
+    font-weight: 400;
+}
+
+.content_01 .product_hover .np_button p::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    display: inline-block;
+    transform: rotate(45deg);
+}
+
+.content_01 .product_hover .np_button:hover {
+    background: #fff;
+    color: #222;
+    text-shadow: none;
+}
+
+.content_01 .product_hover .np_button:hover p::after {
+    border-top: 1px solid #222;
+    border-right: 1px solid #222;
+}
 
 .content_02 {
     display: inline-block;
@@ -206,6 +313,36 @@ section .wrap_content {
     display: flex;
     justify-content: space-between;
 }
+
+.content_02 .best_product li {
+    position: relative;
+}
+
+
+.content_02 .best_product .bp_img {
+    position: relative;
+    line-height: 0;
+}
+
+
+.content_02 .bp_img .product_hover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #22222280 ;
+}
+
+.content_02 .product_hover img {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
+
+.content_02 .bp_img:hover .product_hover{
+    display: block;
+}
+
 
 .content_02 .product_info {
     margin-top: 8px;
@@ -294,10 +431,40 @@ section .wrap_content {
     border-top: 1px solid #fff;
     border-right: 1px solid #fff;
 }
+
 .content_04 .insta ul {
     display: flex;
     justify-content: space-between;
 }
+
+.content_04 .insta li {
+    position: relative;
+}
+
+.content_04 .insta_hover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #22222280 ;
+}
+
+.content_04 .insta_img {
+    line-height: 0;
+}
+
+.content_04 .insta_hover img {
+    line-height: 0;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+}
+
+.content_04 .insta li:hover .insta_hover {
+    display: block;
+}
+
+
 
 .content_05 {
     display: inline-block;
@@ -327,7 +494,6 @@ section .wrap_content {
 }
 
 .content_05 iframe {
-    display: inline-block;
     float: right;
 }
 
