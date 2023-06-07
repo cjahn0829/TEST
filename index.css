@@ -103,37 +103,17 @@ button {
     padding: 24px 0;
 }
 
-.footer_wrap {
+.footer .footer_wrap {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.footer_wrap {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.footer_wrap ul {
-    display: inline-block;
-    width: 86%;
-}
-
-.footer_wrap .footer_info a p {
-    font-weight: 600;
-    font-size: 13px;
-    color: #222222;
-}
-
-.footer_wrap .footer_info li {
-    float: left;
-    font-size: 14px;
-    color: #999999;
-}
-
-.footer_wrap .footer_info p {
-    display: inline-block;
-    font-size: 14px;
-    color: #999999;
+.footer .footer_wrap .footer_info ul {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 

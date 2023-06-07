@@ -137,12 +137,6 @@ button {
 }
 
 
-
-/* #####공통##### */
-
-
-
-
 /* #####컨텐츠영역##### */
 
 
@@ -211,12 +205,21 @@ nav .warp_content {
 }
 
 .product_cate li{ 
-    /* float: left; */
-    margin: 0 20px;
+    width: 20%;
     padding:10px;
-    /* text-align: center; */
+    text-align: center;
     list-style: none;
 }
+
+.product_cate li {
+    border-right: 1px solid #ddd;
+    content: "";
+}
+
+.product_cate li:last-child {
+    border: none;
+}
+
 
 .prodict_cate li a  {
     letter-spacing: 0.5px;
@@ -232,10 +235,61 @@ nav .warp_content {
     margin-bottom: 60px;
 }
 
+.content_01 .bp_img {
+    position: relative;
+    line-height: 0;
+}
+
+.content_01 .bp_img .product_hover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #22222280 ;
+}
+
+.content_01 .product_hover img {
+    position: absolute;
+    right: 4%;
+    top: 4%;
+}
+
+.content_01 .bp_img:hover .product_hover{
+    display: block;
+}
+
+.content_01 .product_info p {
+    font-weight: 900;
+}
+
+.content_01 .product_info {
+    margin-top: 8px;
+}
+
+.content_01 .product_info p {
+    font-weight: 900;
+}
+
+.content_01 .info {
+    font-size: 14px;
+    float: left;
+    color: #999999;
+}
+
+.content_01 .price {
+    font-size: 14px;
+    float: right;
+    font-weight: bold;
+}
+
 
 .content_01 .product_list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.content_01 .product_list li {
+    margin-bottom: 32px;
 }
 
