@@ -279,6 +279,10 @@ nav .warp_content {
     padding: 8px 42px;
 }
 
+.location_box .location_info .loca_map_btn:hover {
+    background-color: #222222;
+    color: #fff;
+}
 
 .location_box:nth-child(2) img {
     width: 66%;
